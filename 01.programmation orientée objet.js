@@ -64,3 +64,16 @@ function Personne (nom,prenom,pseudo){
 }
     //Go(robert.getNomComplet()); 
     afficherPersonne(robert);
+
+    function Client (nom,prenom,pseudo,numeroClient){
+        Personne.call(this,nom,prenom,pseudo);
+        this.numeroClient = numeroClient;
+        this.getInfo = function(){
+            return "information client : Nom "+this.nom +" Prénom "+ this.prenom +" Pseudo "+this.pseudo+" Numéro-Client "+this.numeroClient;
+        } 
+    }
+    var steve = new Client("LUCAS","Steve","steve44","A01");
+
+    afficherPersonne(steve);
+    Go(steve.numeroClient);
+    Go(steve.getInfo());
