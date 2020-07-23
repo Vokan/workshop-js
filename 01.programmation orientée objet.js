@@ -34,5 +34,13 @@ function Personne (nom,prenom,pseudo){
 
     afficherPersonne(jules);
 
+    //ajout de la propriété age dans l'objet jules.
+    Go(jules.age);
+    Personne.prototype.age="NON RENSEIGNE";
+    Go(jules.age);
+    jules.age="30";
+    Go(jules.age);
+
+
 
 
