@@ -41,6 +41,14 @@ function Personne (nom,prenom,pseudo){
     jules.age="30";
     Go(jules.age);
 
+    //Ajouter une méthode à Personne.
+    Personne.prototype.getInitiales =function(){
+        var iniNom = this.nom.charAt(0);
+        var iniPrenom = this.prenom.charAt(0);
+        return iniNom+" "+iniPrenom
+    }
+    //afficherPersonne(jules.getInitiales()); //pk ne marche pas ?
+    Go(jules.getInitiales());
 
 
 
