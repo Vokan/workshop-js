@@ -1,6 +1,8 @@
 
 var Go =console.log;
 
+Go("TP3");
+Go(" ");
 function Personne (nom,prenom,pseudo){
     this.nom = nom;
     this.prenom = prenom;
@@ -50,5 +52,15 @@ function Personne (nom,prenom,pseudo){
     //afficherPersonne(jules.getInitiales()); //pk ne marche pas ?
     Go(jules.getInitiales());
 
+    // Objet sans constructeur. --> notation littérale dans le cours 
 
-
+    var robert ={
+        prenom :"Robert",
+        nom :"LEPREFET",
+        pseudo :"robert77",
+        getNomComplet : function (){
+            return "le nom complet est : " +this.nom +" "+ this.prenom +" pseudo => " + this.pseudo;
+    }
+}
+    //Go(robert.getNomComplet()); 
+    afficherPersonne(robert);
