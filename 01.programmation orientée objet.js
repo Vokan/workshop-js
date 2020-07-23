@@ -19,8 +19,20 @@ function Personne (nom,prenom,pseudo){
     Go(jules.prenom);
     Go(jules.pseudo);
     Go(jules.getNomComplet());
-
     Go(paul.getNomComplet());
+
+    function afficherPersonne (personne){
+        Go(personne.nom);
+        Go(personne.prenom);
+        Go(personne.pseudo);
+        Go(personne.getNomComplet());
+    }
+    afficherPersonne(paul);
+
+    // modification du pseudo.
+    jules.pseudo ="jules44";
+
+    afficherPersonne(jules);
 
 
 
